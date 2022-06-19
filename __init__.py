@@ -23,7 +23,10 @@ class KeywordPromptMiddleware(Middleware):
     middleware_name: str = "Keyword Prompt Middleware"
     __version__: str = '0.0.1'
 
-    keywords = ['收到红包，请在手机上查看']
+    keywords = ['收到红包，请在手机上查看',
+               '收到紅包，請在手機上查看',
+               '收到利是，請在手機上查看',
+               'Red packet received. View on phone.']
 
     def __init__(self, instance_id: Optional[InstanceID] = None):
         super().__init__(instance_id)
